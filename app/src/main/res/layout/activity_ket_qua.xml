@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77B179"
+    tools:context=".KetQua">
+
+    <TextView
+        android:id="@+id/tvHienThiMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11A1E3"
+        android:gravity="center"
+        android:text="Kết quả"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvHienThiDiem"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvHienThiMon"
+        android:layout_marginTop="200dp"
+        android:background="#11A1E3"
+        android:gravity="center"
+        android:text="Điểm số: 3 / 5"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btnTrangChu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHienThiDiem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Trang chủ" />
+</RelativeLayout>

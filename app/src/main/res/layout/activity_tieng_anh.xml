@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77B179"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Total Question"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choices_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Câu hỏi ở đây"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans A"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans B"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans C"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans D"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choices_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnCauTruoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choices_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Trước" />
+
+        <Button
+            android:id="@+id/btnNopBai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choices_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Nộp" />
+
+        <Button
+            android:id="@+id/btnCauSau"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choices_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Sau" />
+    </LinearLayout>
+
+
+</RelativeLayout>

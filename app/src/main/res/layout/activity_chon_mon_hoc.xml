@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChonMonHoc">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#03A9F4"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Trắc nghiệm lớp 1"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:stretchColumns="*">
+
+            <TableRow
+
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnToan"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#fff"
+                        android:src="@drawable/math"></ImageButton>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toán"
+                        android:textColor="#000"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnTiengViet"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#fff"
+                        android:src="@drawable/vietnamese"></ImageButton>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tiếng Việt"
+                        android:textColor="#000"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnTiengAnh"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#fff"
+                        android:src="@drawable/english"></ImageButton>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tiếng Anh"
+                        android:textColor="#000"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnKhoaHoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#fff"
+                        android:src="@drawable/science"></ImageButton>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khoa học"
+                        android:textColor="#000"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>
